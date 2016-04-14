@@ -4,6 +4,38 @@
   padding: 1rem 0;
 }
 
+.section--secondary {
+  background: rgba($black, .05);
+}
+
+.section__header {
+  text-align: center;
+
+  .section__title,
+  .section__caption {
+    margin: 0 0 .25rem;
+  }
+
+  margin: 0 0 1rem;
+}
+
+.section__title {
+  margin: 0 0 1rem;
+
+  color: lighten($black, 30%);
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.section__caption {
+  margin: 0 0 1rem;
+
+  color: $primary;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .section__text {
   line-height: 1.8;
   color: lighten($black, 60%);
@@ -22,6 +54,18 @@
 @media screen and (min-width: $breakpoint-sm) {
   .section {
     padding: 2rem 0;
+  }
+
+  .section__header {
+    text-align: left;
+  }
+
+  .section__title {
+    font-size: 1.4rem;
+  }
+
+  .section__caption {
+    font-size: 1.2rem;
   }
 
   .section__text {
