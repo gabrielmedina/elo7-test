@@ -1,0 +1,49 @@
+// header
+
+.header {
+  position: relative;
+}
+
+.header__title {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+
+  display: block;
+  width: 100%;
+
+  color: $white;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+
+  text-shadow: 0 .1rem .1rem rgba($black, .6);
+}
+
+.header__figure {
+
+}
+
+.header__image {
+  width: 100%;
+}
+
+@media screen and (min-width: $breakpoint-ty) {
+  .header__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .header__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .header__title {
+    font-size: 4.2rem;
+  }
+}
