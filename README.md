@@ -2,7 +2,7 @@
 
 Codificação front-end para landing page "Trabalhe na Elo7".
 
-## O que foi utilizado
+## O que foi utilizado?
 
 ### Grunt.js
 
