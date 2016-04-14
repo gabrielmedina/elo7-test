@@ -1,11 +1,16 @@
 // header
 
 .header {
+  text-align: center;
+}
+
+.header__content {
   position: relative;
 }
 
 .header__title {
   position: absolute;
+  z-index: 2;
   bottom: 25%;
   left: 50%;
   margin: 0;
@@ -17,13 +22,11 @@
   color: $white;
   font-size: 1.6rem;
   font-weight: 800;
-  text-align: center;
-
-  text-shadow: 0 .1rem .1rem rgba($black, .6);
+  text-shadow: 0 .1rem .1rem rgba($black, .4);
 }
 
 .header__figure {
-
+  overflow: hidden;
 }
 
 .header__image {
@@ -38,12 +41,26 @@
 
 @media screen and (min-width: $breakpoint-sm) {
   .header__title {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 }
 
 @media screen and (min-width: $breakpoint-md) {
   .header__title {
-    font-size: 4.2rem;
+    font-size: 3rem;
+  }
+
+  .header__figure {
+    position: relative;
+
+    height: 28.125rem;
+  }
+
+  .header__image {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
 }
