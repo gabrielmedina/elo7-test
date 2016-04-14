@@ -1,0 +1,4 @@
+layout/*
+node_modules/*
+.sass-cache/*
+public/css/application.css.map

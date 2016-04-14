@@ -1,0 +1,35 @@
+// grid
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    width: $container-sm;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    width: $container-md;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: $container-lg;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.row {
+  width: 100%;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
