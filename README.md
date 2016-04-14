@@ -16,6 +16,10 @@ Codificação front-end para landing page "Trabalhe na Elo7".
 
 [Hampton Catlin, Natalie Weizenbaum, Chris Eppstein, e vários colaboradores](http://sass-lang.com/guide).
 
+## Como foi feito?
+
+O projeto foi fracionado em algumas tarefas, descritas de acordo com cada necessidade a ser implementada. Você pode acompanhar esse processo em: https://www.pivotaltracker.com/n/projects/1573697
+
 ## Ambiente de desenvolvimento
 
 Para manter o projeto, seu ambiente de desenvolvimento deve conter o [Node.js](https://nodejs.org/en/download/), juntamente com o plugin [Grunt.js](http://gruntjs.com/getting-started).
