@@ -1,0 +1,32 @@
+// video
+
+.video {
+
+}
+
+.video__player {
+  margin: 0 0 1rem;
+}
+
+.video__link {
+  display: block;
+}
+
+.video__image {
+  position: relative;
+  width: 100%;
+}
+
+
+@media screen and (min-width: $breakpoint-sm) {
+  .video__player {
+    float: left;
+    width: 47%;
+    margin-right: 6%;
+  }
+
+  .video__content {
+    float: left;
+    width: 47%;
+  }
+}
