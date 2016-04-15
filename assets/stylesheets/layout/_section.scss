@@ -9,21 +9,21 @@
 }
 
 .section__header {
+  margin: 0 0 1.5rem;
+
   text-align: center;
 
   .section__title,
   .section__caption {
     margin: 0 0 .25rem;
   }
-
-  margin: 0 0 1rem;
 }
 
 .section__title {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
 
   color: lighten($black, 30%);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -61,7 +61,8 @@
   }
 
   .section__title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    margin: 0 0 2rem;
   }
 
   .section__caption {
