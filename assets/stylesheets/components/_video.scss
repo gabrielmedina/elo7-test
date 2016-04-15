@@ -1,7 +1,7 @@
 // video
 
 .video {
-
+  margin-bottom: 1rem;
 }
 
 .video__player {
@@ -19,14 +19,18 @@
 
 
 @media screen and (min-width: $breakpoint-sm) {
+  .video {
+    margin-bottom: 2rem;
+  }
+
   .video__player {
     float: left;
-    width: 47%;
-    margin-right: 6%;
+    width: 48%;
+    margin-right: 4%;
   }
 
   .video__content {
     float: left;
-    width: 47%;
+    width: 48%;
   }
 }
