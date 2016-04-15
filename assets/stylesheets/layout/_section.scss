@@ -4,6 +4,10 @@
   padding: 1rem 0;
 }
 
+.section--hidden {
+  display: none;
+}
+
 .section--secondary {
   background: rgba($black, .05);
 }
@@ -46,8 +50,16 @@
   }
 }
 
+.section__text--left {
+  text-align: left;
+}
+
 .section__text--header {
   color: lighten($black, 40%);
+}
+
+.section__footer {
+  margin-top: 1rem;
 }
 
 
