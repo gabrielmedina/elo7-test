@@ -19,21 +19,41 @@
 
   display: inline-block;
 
+  cursor: default;
+
   &:last-of-type {
     margin-bottom: 0;
   }
 }
 
 .team__member {
-  margin: 0 0 .5rem;
+  margin: 0;
 
   color: lighten($black, 20%);
   font-size: 1rem;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
-.team__figure {
+.team__role {
   margin: 0;
+
+  color: lighten($black, 40%);
+}
+
+.team__address {
+  margin: 0;
+
+  color: $primary;
+  font-style: normal;
+
+  a {
+    color: $primary;
+  }
+}
+
+.team__figure {
+  margin: 0 0 .5rem;
   overflow: hidden;
 }
 
@@ -59,7 +79,7 @@
     }
 
     &:hover {
-      .team__content {
+      .team__container {
         opacity: 1;
       }
 
@@ -69,31 +89,52 @@
     }
   }
 
-  .team__content {
+  .team__container {
     position: absolute;
     z-index: 2;
     top: 0;
+    right: 0;
+    bottom: 8px;
     left: 0;
-    opacity: 0;
-
-    box-sizing: border-box;
-    display: table;
-    width: 101%;
-    height: 9.5625rem;
-    padding: 1rem;
 
     background: rgba($primary, .8);
 
     transition: all .2s ease;
+    opacity: 0;
+  }
+
+  .team__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
   }
 
   .team__member {
-    display: table-cell;
+    margin: 0 0 .5rem;
 
     color: $white;
-    vertical-align: middle;
+  }
 
-    cursor: default;
+  .team__role {
+    margin: 0;
+
+    color: $white;
+
+    opacity: .8;
+  }
+
+  .team__address {
+    margin: 0;
+
+    color: $white;
+
+    opacity: .8;
+
+    a {
+      color: $white;
+    }
   }
 
   .team__image {
@@ -111,16 +152,14 @@
     text-shadow: 0 .1rem .04rem rgba($black, .2);
   }
 
-  .team__figure,
-  .team__content {
-    height: 9.5625rem;
+  .team__figure {
+    height: 10.215625rem;
   }
 }
 
 @media screen and (min-width: $breakpoint-md) {
-  .team__figure,
-  .team__content {
-    height: 12.375rem;
+  .team__figure {
+    height: 13.3125rem;
   }
 }
 
@@ -129,12 +168,11 @@
     margin-bottom: 1.5rem;
   }
 
-  .team__figure,
-  .team__content {
-    height: 14.875rem;
+  .team__figure {
+    height: 15.8925rem;
   }
 
   .team__member {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
