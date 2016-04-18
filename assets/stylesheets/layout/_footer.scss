@@ -1,0 +1,25 @@
+// footer
+
+.footer {
+  margin-top: 1rem;
+
+  padding: 1rem 0;
+
+  border-top: solid .1rem rgba($black, .05);
+  background: darken($white, 4%);
+}
+
+.footer__small {
+  float: left;
+
+  color: lighten($black, 30%);
+  font-size: .8rem;
+}
+
+.footer__author {
+  float: right;
+
+  color: lighten($black, 30%);
+  font-size: .8rem;
+  text-decoration: none;
+}
