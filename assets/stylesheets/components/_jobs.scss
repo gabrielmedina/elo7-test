@@ -1,0 +1,101 @@
+// jobs
+
+.jobs {
+  text-align: center;
+}
+
+.jobs__group {
+  margin-bottom: 2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.jobs__title {
+  margin: 0 0 1.5rem;
+
+  color: lighten($black, 30%);
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  cursor: default;
+}
+
+.jobs__list {
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.jobs__item {
+  margin-bottom: 1.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.jobs__link {
+  display: block;
+
+  text-decoration: none;
+}
+
+.jobs__description {
+  margin: 0;
+
+  color: lighten($black, 40%);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.jobs__address {
+  margin: 0;
+
+  color: lighten($black, 50%);
+  font-size: 1rem;
+  font-style: normal;
+}
+
+
+@media screen and (min-width: $breakpoint-sm) {
+  .jobs__group {
+    &:hover {
+      .jobs__link {
+        opacity: .5;
+      }
+    }
+
+    .jobs__link {
+      &:hover {
+        opacity: 1;
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  .jobs__item {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .jobs__link {
+    transition: .15s ease;
+  }
+
+  .jobs__description {
+    font-size: 1.1rem;
+  }
+
+  .jobs__address {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 1.1rem;
+  }
+}

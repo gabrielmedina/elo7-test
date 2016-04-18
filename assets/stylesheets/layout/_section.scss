@@ -30,6 +30,8 @@
   font-size: 1.2rem;
   font-weight: 800;
   text-transform: uppercase;
+
+  cursor: default;
 }
 
 .section__caption {
@@ -38,6 +40,8 @@
   color: $primary;
   font-size: 1rem;
   font-weight: 400;
+
+  cursor: default;
 }
 
 .section__text {
@@ -65,7 +69,7 @@
 
 @media screen and (min-width: $breakpoint-sm) {
   .section {
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
 
   .section__header {
