@@ -45,3 +45,23 @@ Ativar o plugin do Grunt durante o desenvolvimento, para que a compilação dos 
 ```bash
 grunt w
 ```
+
+## Organização do conteúdo
+
+- Trabalhe na Elo7
+  - Palavras do CEO
+    - Carlos Curioni
+  - Conheça nosso time fora de série
+    - Camila
+    - Guto
+    - David
+    - Beatriz
+  - Particularidades
+    - Qualidade de vida
+    - Ambiente descontraído
+    - Atividades extras
+  - Vagas em aberto
+    - Desenvolvimento
+      - Desenvolvedor Mobile Senior (Android iOS)
+      - Desenvolvedor Java Senior
+      - Desenvolvedor Front-end
